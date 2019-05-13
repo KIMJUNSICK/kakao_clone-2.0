@@ -70,12 +70,7 @@
 .message {
   display: flex;
   align-items: flex-start;
-  width: 50%;
   margin-bottom: 20px;
-}
-
-.message .message__content {
-  width: 80%;
 }
 
 .incoming-message {
@@ -98,10 +93,11 @@
     rgba(0, 0, 0, 0.024) 0px -6px 16px -6px;
   padding: 10px 20px;
   border-radius: 30px;
+  color: white;
 }
 
 .incoming-message .message__author {
-  margin-top: 10px;
+  margin-top: 25px;
   display: block;
   font-size: 14px;
   font-weight: 600;
@@ -109,8 +105,10 @@
 
 .incoming-message .message__bubble {
   border-bottom-left-radius: 0px;
+  background-image: linear-gradient(to right, #134e5e, #71b280);
 }
 
 .sent-message .message__bubble {
   border-bottom-right-radius: 0px;
+  background-image: linear-gradient(to left, #ff512f, #f09819);
 }
